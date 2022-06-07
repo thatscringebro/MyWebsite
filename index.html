@@ -13,8 +13,25 @@
 </head>
 <body>
     <div class="container">
-
+        <div class="row">
+            <header></header>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <footer></footer>
+        </div>
     </div>
+    <!--Scripts pour le header et le footer-->
+    <script>
+        $.get('../Content/Footer.html', function (data){}); {
+            $('footer').replaceWith(data);
+        }
+    </script>
+    <script>
+        $.get('../Content/Header.html', function (data){}); {
+            $('Header').replaceWith(data);
+        }
+    </script>
     <!--Scripts à inclure-->
     <script src="Javascricp/Main.js"></script>
     <script src="lib/jquery/jquery.js" type="text/javascript"></script>
