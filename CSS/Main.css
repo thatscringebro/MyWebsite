@@ -8,12 +8,55 @@ body{
     color: #aaa6a6;
     font-family: JetBrains_Mono;
 }
+hr {
+    width: 50px;
+    background: linear-gradient(to right, purple, orange);
+    border-width: 1em;
+}
 
+.header{
+    padding: auto;
+}
+.logo{
+    width: 5em;
+    height: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .GradientBorder{
     border: 5px solid;
-    border-image: linear-gradient(45deg, purple, orange) 1;
-    border-radius: 10px;
+    border-image: linear-gradient(to bottom, purple, orange) 1 100%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 1rem;
 }
-.GradientBackground{
-    background-image: linear-gradient(45deg, purple, orange) 1;
+.GradientText{
+    background-image: linear-gradient(to left, purple, orange, purple);
+    background-clip: text;
+    color: transparent;
+}
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+    position: relative;
+}
+.menu > ul{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.menu li{
+    display: inline;
+}
+.menu li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-image: linear-gradient(to left, orange, purple, orange);
+    background-clip: text;
+    color: transparent;
 }
