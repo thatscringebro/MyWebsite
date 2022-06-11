@@ -10,18 +10,19 @@ body{
 }
 hr {
     width: 100%;
-    background: linear-gradient(to right, purple, orange);
+    background: linear-gradient(to right, #25aae1, #16b468);
     border-width: 1em;
 }
+
 
 .Glow ul {
     margin: 0;
     padding: 0;
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*position: relative;*/
+    /*top: 50%;
+    left: center;*/
+    /*transform: translate(-50%, -50%);*/
 }
   
 .Glow ul li {
@@ -30,13 +31,13 @@ hr {
 }
   
 .Glow ul li a {
-    position: relative; 
+    position: relative;
     display: block;
     width: 60px;
     height: 60px;
     text-align: center;
     line-height: 63px;
-    background: #333;
+    background: #141414;
     border-radius: 50%;
     font-size: 30px;
     color: #666;
@@ -51,7 +52,7 @@ hr {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #ffee10;
+    background: linear-gradient(to right, #25aae1, #16b468);
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -59,13 +60,13 @@ hr {
   
 .Glow ul li a:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
+    box-shadow: 0 0 15px #16b468;
 }
   
 .Glow ul li a:hover {
-    color: #ffee10;
-    box-shadow: 0 0 5px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
+    color: linear-gradient(to right, #25aae1, #16b468);
+    box-shadow: 0 0 5px #25aae1;
+    text-shadow: 0 0 5px #25aae1;
 }
 
 .header{
@@ -79,13 +80,13 @@ hr {
 }
 .GradientBorder{
     border: 5px solid;
-    border-image: linear-gradient(to bottom, purple, orange) 1 100%;
+    border-image: linear-gradient(to bottom, #25aae1, #16b468) 1 100%;
     border-style: solid;
     border-width: 3px;
     padding: 1rem;
 }
 .GradientText{
-    background-image: linear-gradient(to left, purple, orange, purple);
+    background-image: linear-gradient(to left, #25aae1, #16b468, #25aae1);
     background-clip: text;
     color: transparent;
 }
@@ -104,13 +105,40 @@ hr {
 .menu li{
     display: inline;
 }
-.menu li a{
+.menu li button{
     display: inline-block;
     padding: 10px;
     text-decoration: none;
 }
-.menu li a:hover{
-    background-image: linear-gradient(to left, orange, purple, orange);
-    background-clip: text;
+
+.btn-hover {
+    font-size: 16px;
+    font-weight: 600;
     color: transparent;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-clip: text;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #16b468);
 }
