@@ -35,6 +35,12 @@ footer{
     margin-bottom: 0.5em;
 }
 
+.Glow{
+    position: relative;
+    left: 33.3%;
+    margin: auto;
+    margin-bottom: 1em;
+}
 .Glow ul {
     margin: 0;
     padding: 0;
@@ -47,19 +53,19 @@ footer{
   
 .Glow ul li {
     list-style: none;
-    margin: 0 15px;
+    margin: 0 2%;
 }
   
 .Glow ul li a {
     position: relative;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 2em;
+    height: 2em;
     text-align: center;
     line-height: 63px;
     background: #141414;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 1.8em;
     color: #666;
     transition: .5s;
 }
