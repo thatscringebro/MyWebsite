@@ -3,6 +3,10 @@
     src: url(../Fonts/JetBrainsMono-Regular.woff2) format('woff2');
 }
 
+h1{
+    margin: auto;
+    padding: auto;
+}
 body{
     background-color: black;
     color: #aaa6a6;
